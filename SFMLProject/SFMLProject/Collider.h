@@ -14,7 +14,7 @@ public:
 
 	bool isIntersecting(Player* player);
 	void addRectangle(float width, float height, float px, float py, View::Level level);
-	void setLevel(View::Level level)
+	void setLevel(View::Level level);
 
 private:
 	View::Level level;
