@@ -1,6 +1,5 @@
 #include <iostream>
 #include "View.h"
-#include "Player.h"
 #include <SFML/Graphics.hpp>
 
 View::View(Model* model, Player* player) 
@@ -83,10 +82,17 @@ void View::render()
 		this->window.clear();
 		this->backgroundSprites[0].setPosition(sf::Vector2f(0 - (this->model->player->pos.x)*0.1, 0));
 		this->window.draw(this->backgroundSprites[0]);
-		this->model->bcolT();
 		this->window.draw(tutSprite);
+		
+		
+
 		this->window.draw(this->player->playerSprite);
 
+		window.draw(model->zombie1.zombieSprite);
+
+		for (int i = 0; i < model->tutZ.size(); i++) {
+			window.draw(model->tutZ[i].zombieSprite);
+		}
 
 		this->window.display();
 	}

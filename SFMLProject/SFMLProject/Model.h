@@ -13,7 +13,7 @@ public:
 	Model(Player*);
 	~Model();
 
-	int bcolT();
+	Zombie zombie1;
 
 	void update();
 	void restart();
@@ -22,6 +22,7 @@ public:
 	float velocity;
 	
 	std::vector<Item*> items;
+	std::vector<Zombie> tutZ;
 
 	Player* player;
 };

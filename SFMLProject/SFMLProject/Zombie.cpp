@@ -3,20 +3,36 @@
 #include "Zombie.h"
 
 
-Zombie::Zombie(float x, float y) {
+Zombie::Zombie() {
 	
 	int health = 100;
 
 	state = ALIVE;
 
-	pos.x = x;
-	pos.y = y;
+	pos.x = 0;
+	pos.y = 0;
+
+	counter = 5;
 
 	velocity = 0;
 
-	this->zombieTexture.loadFromFile("Assets/zombieSmall.png");
-	this->zombieSprite.setTexture(this->zombieTexture);
-	this->zombieSprite.setOrigin(0, 0);
-	this->zombieSprite.setPosition(pos.x, pos.y);
+}
 
+void Zombie::update() {
+	
+	if (state == ALIVE) {
+		if (counter >= 0 && counter < 100) {
+			pos.x += 2;
+			zombieSprite.setPosition(pos.x, pos.y);
+			counter++;
+		}
+		else if (counter >= 100) {
+			pos.x -= 2;
+			zombieSprite.setPosition(pos.x, pos.y);
+			counter++;
+			if (counter == 200) {
+				counter = 0;
+			}
+		}
+	}
 }

@@ -13,8 +13,6 @@ public:
 	stdZ();
 	~stdZ();
 
-	void patrol();
-
-	void attacking();
+	int check;
 
 };

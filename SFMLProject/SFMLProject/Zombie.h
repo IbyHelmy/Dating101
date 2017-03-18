@@ -9,14 +9,17 @@ class Zombie {
 
 public:
 
-	Zombie(float x, float y);
-	~Zombie();
+	Zombie();
 
 	enum ZombieState { ALIVE, DEAD };
 
 	ZombieState state;
 
 	void setZombieState(ZombieState);
+
+	void update();
+
+	int counter;
 
 	int health;
 
