@@ -1,0 +1,18 @@
+﻿  Zombie.cpp
+  View.cpp
+c:\users\iby\videos\comp2501\game\sfmlproject\sfmlproject\view.cpp(75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\iby\videos\comp2501\game\sfmlproject\sfmlproject\view.cpp(81): warning C4018: '<': signed/unsigned mismatch
+  stdZ.cpp
+  Generating Code...
+  Compiling...
+  Controller.cpp
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Player.cpp
+  Model.cpp
+  Game.cpp
+  Main.cpp
+  Item.cpp
+  Inventory.cpp
+  SFMLProject.vcxproj -> C:\Users\Iby\Videos\COMP2501\Game\SFMLProject\Debug\SFMLProject.exe
+  SFMLProject.vcxproj -> C:\Users\Iby\Videos\COMP2501\Game\SFMLProject\Debug\SFMLProject.pdb (Full PDB)
